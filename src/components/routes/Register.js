@@ -56,28 +56,28 @@ export default function Register() {
 
   return (
     <div class="register-container">
-        <h1>Register</h1>
+        <h1 class="header">Register</h1>
         <form 
             id="form_container" 
             onSubmit={handleSubmit} 
             encType="multipart/form-data">
         <input
               type="text"
-              className="Register_input"
+              class="Register_input"
               placeholder="Name"
               onChange={(e) => setName(e.target.value)}
               value={name}
             />
             <input
               type="text"
-              className="Register_input"
+              class="Register_input"
               placeholder="Email"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
             />
             <input
               type="password"
-              className="Register_input"
+              class="Register_input"
               placeholder="Password"
               onChange={(e) => setPassword(e.target.value)}
               value={password}

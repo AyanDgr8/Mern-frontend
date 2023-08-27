@@ -1,0 +1,75 @@
+/*  src/components/routes/Register.css */
+
+
+
+:root{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.register-container{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%; 
+    max-width: 700px; 
+    margin-top:50px;
+    padding: 50px;
+    background-color: rgb(37, 226, 20);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    margin-top: 5px;
+    margin-left: 250px;
+    font-size: 3rem;
+    color: rgb(4, 4, 49);
+
+}
+
+#form_container input,
+#form_container button {
+    padding: 10px;
+    margin-bottom: 2rem;
+    margin-left:95px;
+    border:0;
+    outline: 0;
+    border-bottom: 1px solid white;
+    background-color:rgb(4, 4, 49) ;
+    
+}
+
+
+#form_container input{
+    width: 70%;
+    padding: 10px;
+    border:0;
+    outline: 0;
+    background-color: rgb(4, 4, 49);
+    border-bottom: 1px solid white;
+    color:white; 
+}
+
+#form_container input:hover{
+    background-color: lightblue;
+    color:white;
+
+}
+
+#form_container button {
+    width:50%;
+    background-color: rgb(4, 4, 49);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 170px;
+    border-radius: 10em;
+}
+
+#form_container button:hover {
+    background-color: #0056b3;
+}
+
+
+

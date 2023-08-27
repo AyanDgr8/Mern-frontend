@@ -2,6 +2,8 @@
 
 
 import React, { useState, useEffect } from "react";
+import './Record.css' ;
+
 
 const Record = () => {
   const [recording, setRecording] = useState(false);
@@ -53,30 +55,35 @@ const Record = () => {
 
   return (
     <div>
-      <h2>Recording Example</h2>
+      <h2 class="title">Record video</h2>
       {permissionDenied ? (
         <p>Permission to access the camera and microphone was denied.</p>
       ) : (
-        <>
-          <button onClick={handleStartRecording} disabled={recording}>
-            Start Recording
-          </button>
-          <button onClick={handleStopRecording} disabled={!recording}>
-            Stop Recording
-          </button>
-        </>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <video
+            height="400"
+            width="1200"
+            ref={(videoElement) => {
+              if (videoElement && mediaStream) {
+                videoElement.srcObject = mediaStream;
+              }
+            }}
+            autoPlay
+            muted
+          ></video>
+          <div>
+            <button onClick={handleStartRecording} disabled={recording} class="start">
+              Start Recording
+            </button>
+            <button onClick={handleStopRecording} disabled={!recording} class="stop">
+              Stop Recording
+            </button>
+          </div>
+        </div>
       )}
-      <video
-        ref={(videoElement) => {
-          if (videoElement && mediaStream) {
-            videoElement.srcObject = mediaStream;
-          }
-        }}
-        autoPlay
-        muted
-      ></video>
     </div>
   );
 };
+
 
 export default Record;

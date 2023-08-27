@@ -1,0 +1,42 @@
+/*  src/components/routes/Record.css */
+
+.title{
+    margin-top: 20px;
+    margin-left: 40%;
+    font-size: 3rem;
+    color: rgb(4, 4, 49);
+}
+
+.start{
+    width:220px;
+    background-color: rgb(4, 4, 49);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+    border-radius: 10em;
+    font-size:25px;
+
+}
+
+.start:hover{
+    background-color: red;
+}
+
+.stop{
+    width:220px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 100px;
+    border-radius: 10em;
+    font-size:25px;
+}
+
+.stop:hover{
+    background-color: rgb(4, 4, 49);
+}
+
+

@@ -59,30 +59,28 @@ export default function Login(){
 
     return (
         
-        <div>
-          <h1 class="head">Login</h1>
-          <div class="sign-in-container">
-                <form action="https://videosharing-frontend-33u7.onrender.com/login" method="post" id="form-section" onSubmit={handleSubmit}>
-                    <input
-                        type="text"
-                        onChange={(e) => setEmail(e.target.value)}
-                        value={email}
-                        placeholder="Email"
-                    />
-                    <input
-                        type="password"
-                        onChange={(e) => setPassword(e.target.value)}
-                        value={password}
-                        placeholder="Password"
-                    />
-                    <button type="submit">Sign in</button>
-                </form>
-                <h3>Not a registered user?</h3>
-                <Link to="/register" class="register-link">
-                    Register
-                </Link>
-            </div>    
+        <div class="login-container">
+            <h1 class="head">Login</h1>
+            <form action="https://videosharing-frontend-33u7.onrender.com/login" method="post" id="form-section" onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    onChange={(e) => setEmail(e.target.value)}
+                    value={email}
+                    placeholder="Email"
+                />
+                <input
+                    type="password"
+                    onChange={(e) => setPassword(e.target.value)}
+                    value={password}
+                    placeholder="Password"
+                />
+                <button type="submit">Sign in</button>
+            </form>
+            <h3 class="head2">Not a registered user?</h3>
+            <Link to="/register" class="register-link">
+                Register
+            </Link>
         </div>
-  );
+    );
 }
 

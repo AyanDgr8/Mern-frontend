@@ -1,0 +1,94 @@
+/*  src/components/routes/Login.css */
+
+
+:root{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.login-container{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%; 
+    max-width: 700px; 
+    margin-top:50px;
+    padding: 50px;
+    background-color: rgba(5, 164, 212, 0.932);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.head {
+    margin-top: 5px;
+    margin-left: 275px;
+    font-size: 3rem;
+    color: rgb(4, 4, 49);
+}
+
+#form-section input,
+#form-section button {
+    padding: 10px;
+    margin-bottom: 2rem;
+    margin-left:95px;
+    border:0;
+    outline: 0;
+    border-bottom: 1px solid white;
+    background-color:rgb(4, 4, 49) ;
+}
+
+
+#form-section input{
+    width: 70%;
+    padding: 10px;
+    border:0;
+    outline: 0;
+    background-color: rgb(4, 4, 49);
+    border-bottom: 1px solid white;
+    color:white; 
+
+}
+
+#form-section input:hover{
+    background-color: lightblue;
+    color:white;
+}
+
+#form-section button {
+    width:50%;
+    background-color: rgb(4, 4, 49);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 170px;
+    border-radius: 10em;
+}
+
+#form-section button:hover {
+    background-color: #0056b3;
+}
+
+.head2{
+    margin-left:220px;
+    display: inline;
+
+}
+
+.register-link {
+    font-size: 1.3rem;
+    color: pink;
+    font-weight: 400;
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline;
+    margin-left: 5px;
+}
+
+.register-link:hover {
+    background-color: #0056b3;
+    color:whitesmoke;
+}
+
+
