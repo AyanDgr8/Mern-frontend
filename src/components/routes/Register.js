@@ -37,7 +37,7 @@ export default function Register() {
       return;
     }
 
-    axios.post("https://videosharing-frontend-33u7.onrender.com/registering", 
+    axios.post("YOUR_API_ENDPOINT/register", 
     formData, 
     {
       headers: { 'Content-Type': 'application/json' },

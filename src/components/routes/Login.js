@@ -37,8 +37,7 @@ export default function Login(){
         
         try {
             const response = await axios.post(
-                // `https://videosharing-frontend-33u7.onrender.com/login`,
-                //'YOUR_API_ENDPOINT/login'
+                'YOUR_API_ENDPOINT/login',
                 { email, password },
                 { headers: { 'Content-Type': 'application/json' } }
             );
@@ -61,7 +60,7 @@ export default function Login(){
         
         <div class="login-container">
             <h1 class="head">Login</h1>
-            <form action="https://videosharing-frontend-33u7.onrender.com/login" method="post" id="form-section" onSubmit={handleSubmit}>
+            <form action="YOUR_API_ENDPOINT/login" method="post" id="form-section" onSubmit={handleSubmit}>
                 <input
                     type="text"
                     onChange={(e) => setEmail(e.target.value)}
