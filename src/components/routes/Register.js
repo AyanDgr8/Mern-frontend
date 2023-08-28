@@ -58,7 +58,9 @@ export default function Register() {
     <div class="register-container">
         <h1 class="header">Register</h1>
         <form 
-            id="form_container" 
+            id="form_container"
+            action="YOUR_API_ENDPOINT/register"
+            method="post" 
             onSubmit={handleSubmit} 
             encType="multipart/form-data">
         <input
