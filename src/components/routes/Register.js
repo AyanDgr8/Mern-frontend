@@ -2,13 +2,14 @@
 
 import React, { useState } from "react";
 import './Register.css';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export default function Register() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 //   const [isRegistered, setIsRegistered] = useState(false);
 
   const handleSubmit = (e) => {
@@ -47,6 +48,7 @@ export default function Register() {
 
       // Simulate successful registration and automatic login
       localStorage.setItem("jwtToken", "your-jwt-token"); // Replace with your actual token
+      navigate('/record');
     //   setIsRegistered(true);
     })
     .catch(error => {

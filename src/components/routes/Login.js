@@ -6,8 +6,7 @@ import axios from "axios";
 import { useNavigate, Link} from "react-router-dom";
 
 
-
-export default function Login(){
+const Login = ({ setIsLoggedIn }) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     // const [isRegistered, setIsRegistered] = useState(false);
@@ -45,8 +44,8 @@ export default function Login(){
             const jwtToken = response.data.data;
             if (jwtToken) {
                 localStorage.setItem("jwtToken", jwtToken);
-                // setIsRegistered(true);
-                window.location.href = "/";
+                setIsLoggedIn(true);
+                Navigate("/");
             } else {
                 alert('Failed to receive JWT token.');
             }
@@ -83,3 +82,5 @@ export default function Login(){
     );
 }
 
+
+export default Login;

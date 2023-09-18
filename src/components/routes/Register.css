@@ -12,7 +12,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 50%; 
-    max-width: 700px; 
+    max-width: 500px; 
     margin-top:50px;
     padding: 50px;
     background-color: rgb(37, 226, 20);
@@ -22,9 +22,9 @@
 
 .header {
     margin-top: 5px;
-    margin-left: 250px;
+    margin-left: 170px;
     font-size: 3rem;
-    color: rgb(4, 4, 49);
+    color: rgb(5, 41, 2);
 
 }
 
@@ -32,11 +32,11 @@
 #form_container button {
     padding: 10px;
     margin-bottom: 2rem;
-    margin-left:95px;
+    margin-left:80px;
     border:0;
     outline: 0;
     border-bottom: 1px solid white;
-    background-color:rgb(4, 4, 49) ;
+    background-color:rgb(5, 41, 2);
     
 }
 
@@ -46,29 +46,29 @@
     padding: 10px;
     border:0;
     outline: 0;
-    background-color: rgb(4, 4, 49);
+    background-color: rgb(5, 41, 2);
     border-bottom: 1px solid white;
     color:white; 
 }
 
 #form_container input:hover{
-    background-color: lightblue;
+    background-color: rgb(12, 148, 19);
     color:white;
 
 }
 
 #form_container button {
     width:50%;
-    background-color: rgb(4, 4, 49);
+    background-color: rgb(5, 41, 2);
     color: #fff;
     border: none;
     cursor: pointer;
-    margin-left: 170px;
+    margin-left: 135px;
     border-radius: 10em;
 }
 
 #form_container button:hover {
-    background-color: #0056b3;
+    background-color: rgb(12, 148, 19);
 }
 
 

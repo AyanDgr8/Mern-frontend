@@ -13,7 +13,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 50%; 
-    max-width: 700px; 
+    max-width: 500px; 
     margin-top:50px;
     padding: 50px;
     background-color: rgba(5, 164, 212, 0.932);
@@ -23,7 +23,7 @@
 
 .head {
     margin-top: 5px;
-    margin-left: 275px;
+    margin-left: 190px;
     font-size: 3rem;
     color: rgb(4, 4, 49);
 }
@@ -32,7 +32,7 @@
 #form-section button {
     padding: 10px;
     margin-bottom: 2rem;
-    margin-left:95px;
+    margin-left:80px;
     border:0;
     outline: 0;
     border-bottom: 1px solid white;
@@ -52,7 +52,7 @@
 }
 
 #form-section input:hover{
-    background-color: lightblue;
+    background-color: #0056b3;
     color:white;
 }
 
@@ -62,7 +62,7 @@
     color: #fff;
     border: none;
     cursor: pointer;
-    margin-left: 170px;
+    margin-left: 150px;
     border-radius: 10em;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .head2{
-    margin-left:220px;
+    margin-left:140px;
     display: inline;
 
 }
