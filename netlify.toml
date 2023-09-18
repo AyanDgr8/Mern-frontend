@@ -1,4 +1,0 @@
-[build]
-  base = "Mern-frontend"
-  publish = "build"
-  command = "npm run build"
