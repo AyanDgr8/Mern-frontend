@@ -21,6 +21,5 @@ export default function Main() {
             </Routes>
         </Router>
       </div>
-    
   }
 
