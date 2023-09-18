@@ -9,7 +9,7 @@ const Record = () => {
   const [recording, setRecording] = useState(false);
   const [mediaStream, setMediaStream] = useState(null);
   const [mediaRecorder, setMediaRecorder] = useState(null);
-  const [recordedChunks, setRecordedChunks] = useState([]);
+  // const [recordedChunks, setRecordedChunks] = useState([]);
   const [permissionDenied, setPermissionDenied] = useState(false);
 
   const startRecording = async () => {
