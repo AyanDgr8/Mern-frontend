@@ -57,25 +57,29 @@ const Login = ({ setIsLoggedIn }) => {
 
     return (
         
-        <div class="login-container">
-            <h1 class="head">Login</h1>
+        <div className="login-container">
+            <h1 className="head">Login</h1>
             <form action="YOUR_API_ENDPOINT/login" method="post" id="form-section" onSubmit={handleSubmit}>
                 <input
                     type="text"
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
                     placeholder="Email"
+                    id="username" 
+                    name="username"
                 />
                 <input
                     type="password"
                     onChange={(e) => setPassword(e.target.value)}
                     value={password}
                     placeholder="Password"
+                    id="password" 
+                    name="password"
                 />
                 <button type="submit">Sign in</button>
             </form>
-            <h3 class="head2">Not a registered user?</h3>
-            <Link to="/register" class="register-link">
+            <h3 className="head2">Not a registered user?</h3>
+            <Link to="/register" className="register-link">
                 Register
             </Link>
         </div>

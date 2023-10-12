@@ -9,7 +9,7 @@ const Landing = () => {
     <div>
       <p id="sentence">Click the button below to start recording</p>
       <Link to="/login">
-        <button class="start-record">Start Recording</button>
+        <button className="start-record">Start Recording</button>
       </Link>
     </div>
   );
