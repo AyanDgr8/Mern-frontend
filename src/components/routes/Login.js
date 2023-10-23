@@ -32,8 +32,20 @@ const Login = ({ setIsLoggedIn }) => {
             alert("Please Fill the password");
             return;
         }
-        
-        
+
+        // Check if the login endpoint is defined on the server and the URL is correct
+        try {
+            const response = await axios.get("YOUR_API_ENDPOINT/login");
+            if (response.status !== 200) {
+            alert("Login endpoint not found");
+            return;
+            }
+        } catch (error) {
+            alert("Failed to check login endpoint");
+            return;
+        }
+
+        // Send the login request
         try {
             const response = await axios.post(
                 'YOUR_API_ENDPOINT/login',
